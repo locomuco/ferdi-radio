@@ -1,10 +1,9 @@
 from telegram.ext import Updater, MessageHandler, Filters
 from telegram.ext import CommandHandler
+from credentials import TELEGRAM_TOKEN
 from pydub import AudioSegment, effects
 
 import logging
-
-TELEGRAM_TOKEN = ''
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO)
